@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import './enum.dart';
 
 class FlutterBaiduNavi {
-  static const MethodChannel _channel = const MethodChannel('baidu_navi');
+  static const MethodChannel _channel =
+      const MethodChannel('flutter_baidu_navi');
 
   static Future<String> get platformVersion async {
     final String version = await _channel.invokeMethod('getPlatformVersion');

@@ -17,10 +17,12 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'BaiduNaviKit', '6.2.0'
+  s.dependency 'BaiduNaviKit/TTS', '6.2.0'
   s.platform = :ios, '8.0'
-  s.vendored_libraries  = 'Libs/*.a'
-  s.resource = ['Resources/*.bundle']
   s.static_framework = true
+  # 以下注释的两行为走的弯路，如上直接pod添加TTS依赖即可，之前没仔细看官方的集成文档啊😂
+  # s.vendored_libraries  = 'Libs/*.a'
+  # s.resource = ['Resources/*.bundle']
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }

@@ -2,16 +2,31 @@
 
 Flutter baidu map navigation - Flutter百度地图导航
 
+## 更新
+
+### 2021.05.21
+
+移除手动添加的TTS静态库和资源包，避免文件过大无法上传的问题，可用git source的方式使用插件
+
+> 再次看了下百度导航官方的文档，发现TTS是支持pod依赖的，因为是注释掉了所以不起眼当时没有看到😂，还是自己不够仔细啊，走了那么多的弯路
+
 ## 使用
 
-暂时只支持下载到本地，使用本地依赖插件的方式，在`pubspec.yaml`中配置插件目录路径
+**添加依赖**
+
+因为Android端的功能尚未开发，固还未发布到pub，目前可使用git source依赖的方式，在`pubspec.yaml`中配置：
+
+```
+flutter_baidu_navi:
+  git: https://github.com/Smiacter/flutter_baidu_navi.git
+```
+
+或下载源码到本地，使用本地依赖插件的方式，在`pubspec.yaml`中配置插件目录路径
 
 ```
 flutter_baidu_navi:
 	path: ../plugin/flutter_baidu_navi	# 路劲根据自己的存放目录而定
 ```
-
-由于使用了内置TTS，里面有一个静态库`libBNTTSComponent_OpenSDK.a`，它的大小接近190M，暂时无法上传到百度网盘（下载链接: https://pan.baidu.com/s/1ynZhyqy3IdbfLxgFHPrTGA  提取码: dvgt），需自己下载放到flutter_baidu_navi -> ios -> Libs目录（如果没有Libs目录，需手动创建，具体依赖可以查看ios目录中的flutter_baidu_navi.podspec配置）
 
 **初始化百度地图定位**
 
@@ -81,7 +96,6 @@ enum BaiduNaviResult {
 ### TODO: 
 
 - [ ] Android端功能开发
-- [ ] GitHub使用`Git LFS`上传大文件静态库，支持通过source配置安装
 - [ ] 最终完善，发布到pub
 
 ## 更多

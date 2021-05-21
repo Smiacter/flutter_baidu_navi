@@ -100,4 +100,4 @@ enum BaiduNaviResult {
 
 ## 更多
 
-其他更多开发细节和说明可以查看博客[百度地图导航Flutter插件(iOS端)](https://smiacter.github.io/2021/05/18/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE%E5%AF%BC%E8%88%AAFlutter%E6%8F%92%E4%BB%B6/)
+其他更多开发细节和说明可以查看博客[百度地图导航Flutter插件(iOS端)](https://www.jianshu.com/p/7c92f35cd765)

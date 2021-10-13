@@ -18,7 +18,8 @@ Flutter baidu map navigation - Flutter百度地图导航
 
 ```
 flutter_baidu_navi:
-  git: https://github.com/Smiacter/flutter_baidu_navi.git
+    git:
+      url: https://github.com/Smiacter/flutter_baidu_navi.git
 ```
 
 或下载源码到本地，使用本地依赖插件的方式，在`pubspec.yaml`中配置插件目录路径

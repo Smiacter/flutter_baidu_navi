@@ -16,8 +16,8 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'BaiduNaviKit', '6.2.0'
-  s.dependency 'BaiduNaviKit/TTS', '6.2.0'
+  s.dependency 'BaiduNaviKit', '6.3.0'
+  s.dependency 'BaiduNaviKit/TTS', '6.3.0'
   s.platform = :ios, '8.0'
   s.static_framework = true
   # 以下注释的两行为走的弯路，如上直接pod添加TTS依赖即可，之前没仔细看官方的集成文档啊😂
